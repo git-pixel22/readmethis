@@ -6,8 +6,50 @@ body {
     background: #e53935;
     background: linear-gradient(to left, #e53935 , #e35d5b);
     background-size: cover;
-    background-repeat: no-repeat;
-    overflow-y: hidden;
+    position: relative;
+ }
+
+ #snow,
+#infoi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#infoi {
+  z-index: 10;
+}
+
+ .snow, snow:after, .snow:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+  radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+  radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+  radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+  radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+  radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+  radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+  radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+  radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+  background-size: 650px 650px;
+ }
+
+ .snow:after{
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+ }
+
+ .snow:before{
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
  }
 
  p {
@@ -67,7 +109,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 230, 115, 0.6);
     padding: 10px 0;
   }
   
