@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadMeThis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center;">ReadMeThis</h1> 
+
+    &nbsp;
+
+    <div id="content" >
+        <h2> Enter Text</h2>
+        <textarea id="inputText" rows = "25"></textarea><br>
+        <button onclick="speak();" id="speak-btn">Click Here</button>
+    </div>
+
+   <footer>
+    <a href="https://twitter.com/x_pixel22">Twitter</a>
+    <a href="https://github.com/git-pixel22">GitHub</a>
+    <a href="https://www.linkedin.com/in/its-rajat/">LinkedIn</a>
+   </footer>
+
+   <script>
+    function speak(){
+        
+        let inputText = document.getElementById("inputText");
+    
+        let utterance = new SpeechSynthesisUtterance(inputText.value);
+        speechSynthesis.speak(utterance);
+        }
+   </script>
+   
+</body>
+</html>

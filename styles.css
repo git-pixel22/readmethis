@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family:'Courier New', Courier, monospace;
+    color: darkseagreen;
+    background-color: #414141;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+#inputText {
+    width: 90%;  
+    resize: vertical; 
+    margin: 2px;
+    background-color: #414141;
+    color: darkseagreen
+}
+
+#content {
+    text-align: center;
+}
+
+#speak-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 5px solid #FF5733;
+  border-radius: 6px;
+  color: #00FF00; 
+  cursor: pointer;
+  background-image: url('snow-falling.gif');
+  background-size: cover;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: orange;
+  }
