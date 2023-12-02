@@ -1,37 +1,65 @@
 body {
     margin: 0;
     height: 100vh;
-    font-family:'Courier New', Courier, monospace;
-    color: darkseagreen;
-    background-color: #414141;
+    font-family: 'Mountains of Christmas', serif;
+    color: white;
+    background: #e53935;
+    background: linear-gradient(to left, #e53935 , #e35d5b);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-y: hidden;
+ }
+
+ p {
+  text-align: center;
+  font-size: 50px;
+ }
+
+ h1 {
+  font-size: 40px;
  }
 
 #inputText {
-    width: 90%;  
-    resize: vertical; 
-    margin: 2px;
-    background-color: #414141;
-    color: darkseagreen
+  font-family: inherit;
+  font-size: x-large;
+  width: 90%;  
+  resize: vertical; 
+  margin: 2px;
+  background-color: #414141;
+  color: white;
 }
+
 
 #content {
     text-align: center;
 }
 
-#speak-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: 5px solid #FF5733;
-  border-radius: 6px;
-  color: #00FF00; 
-  cursor: pointer;
-  background-image: url('snow-falling.gif');
-  background-size: cover;
+button{
+  font-family: 'Mountains of Christmas', serif;
+  font-size:xx-large;
 }
 
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.7rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+  }
 
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
 
 footer {
     display: flex;
@@ -44,11 +72,12 @@ footer {
   }
   
   footer a {
+    font-size: 25px;
     color: white;
     text-decoration: underline;
     margin: 0 10px;
   }
   
   footer a:hover {
-    color: orange;
+    color: #FF5733;
   }
