@@ -1,1 +1,1 @@
-A simple webapp that reads you stuff.
+A simple web app that reads you stuff.
